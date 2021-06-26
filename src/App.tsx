@@ -1,9 +1,10 @@
+import Routes from './Routes'
+
+import './styles/global.scss'
 
 function App() {
 	return (
-		<div>
-			Hello world!
-		</div>
+		<Routes />
 	);
 }
 
