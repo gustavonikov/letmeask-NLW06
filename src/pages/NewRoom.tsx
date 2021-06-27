@@ -29,7 +29,7 @@ export function NewRoom() {
             authorId: user?.id,
         })
 
-        history.push(`/rooms/${firebaseRoom.key}`)
+        history.push(`/admin/rooms/${firebaseRoom.key}`)
     }
 
     return (
@@ -41,7 +41,7 @@ export function NewRoom() {
             </aside>
             <main>
                 <div className="main-content">
-                    <img src={logoImg} alt="Letmeask" />
+                    <Link to="/" style={{ cursor: 'pointer' }}><img src={logoImg} alt="Letmeask" /></Link>
                     <h2>Criar uma nova sala</h2>
                     <form onSubmit={handleCreateRoom}>
                         <input
@@ -51,7 +51,7 @@ export function NewRoom() {
                             onChange={({ target }) => setNewRoom(target.value)}
                         />
                         <Button type="submit">
-                            Cria sala
+                            Criar sala
                         </Button>
                     </form>
                     <p>
