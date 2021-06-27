@@ -11,7 +11,7 @@
             justify-content: space-between;
             align-items: center;
     
-            > img {
+            img {
                 max-height: 45px;
             }
 
@@ -113,6 +113,67 @@
 
         .question-list {
             margin-top: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #page-room {
+        header {
+            .content {
+                max-width: 700px;
+        
+                flex-direction: column;
+        
+                a > img {
+                    margin-bottom: 16px;
+                }
+    
+                > div {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        main {
+            max-width: 700px;
+            
+            .room-title {
+                justify-content: center;
+    
+                h1 {
+                    font-size: 20px;
+                }
+    
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                textarea {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+    
+                .form-footer {
+                    padding: 12px;
+                    flex-direction: column;
+    
+                    .user-info {
+                        margin-bottom: 16px;
+
+                        span {
+                            font-size: 14px;
+                            margin-left: 16px;
+                        }
+                    }
+
+                    > span {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
         }
     }
 }

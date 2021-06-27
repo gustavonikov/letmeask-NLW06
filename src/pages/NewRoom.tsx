@@ -41,7 +41,7 @@ export function NewRoom() {
             </aside>
             <main>
                 <div className="main-content">
-                    <Link to="/" style={{ cursor: 'pointer' }}><img src={logoImg} alt="Letmeask" /></Link>
+                    <img src={logoImg} alt="Letmeask" />
                     <h2>Criar uma nova sala</h2>
                     <form onSubmit={handleCreateRoom}>
                         <input
