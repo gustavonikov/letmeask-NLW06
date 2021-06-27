@@ -29,7 +29,7 @@ REACT_APP_MESSAGING_SENDER_ID
 REACT_APP_APP_ID
 ```
 
-After install the necessarily packages and Firebase being configured, run the development server, that by default will open on http://localhost:3000,
+After install the necessarily packages, Firebase being configured and opened in your Browser (it must be open), run the development server, that by default will open on http://localhost:3000,
 
 ```bash
 npm start
