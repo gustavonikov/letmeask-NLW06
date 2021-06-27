@@ -145,3 +145,35 @@
     }
 
 }
+
+@media only screen and (max-width: 767px) {
+    #page-auth {
+        flex-direction: column;
+
+        aside {
+            max-height: 220px;
+            padding: 80px 40px;
+
+            img {
+                display: none;
+            }
+
+            strong {
+                font: 700 26px 'Poppins', sans-serif;
+                line-height: 32px;
+                margin-top: 16px;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 22px;
+                margin-top: 16px;
+                color: #f8f8f8;
+            }
+        }
+
+        main {
+            padding: 16px;
+        }
+    }
+}
