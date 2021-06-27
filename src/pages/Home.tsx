@@ -21,7 +21,7 @@ export function Home() {
             signInWithGoogle()
         }
 
-        history.push('/rooms/new')  
+        history.push('/rooms/new')
     }
 
     async function handleJoinRoom(ev: FormEvent) {
@@ -30,7 +30,7 @@ export function Home() {
         if (roomCode.trim() === '') {
             return
         }
-    
+
         const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
         if (!roomRef.exists()) {
@@ -45,7 +45,11 @@ export function Home() {
             return
         }
 
-        history.push(`/rooms/${roomCode}`)
+        if (roomRef.child('authorId').val() === user?.id) {
+            history.push(`admin/rooms/${roomCode}`)
+        } else {
+            history.push(`/rooms/${roomCode}`)
+        }
     }
 
     return (
