@@ -14,7 +14,7 @@ or you can download the zip file and open it in your IDE.
 Then you run ```npm install``` if you have npm installed on your machine or ```yarn add``` if you have yarn,
 to install all the dependencies that are necessarily to run the project.
 
-Then you must create a project on (Firebase website)[https://firebase.google.com/] to the app really function.
+Then you must create a project on [Firebase website](https://firebase.google.com/) to the app really function.
 
 After you created your Firebase account, create your project, copy the config file containing the ApiKey, AuthDomain, etc...
 and create a env.local file, where you must put this informations there, with those names:
@@ -39,7 +39,7 @@ yarn start
 
 ## Main Tools
 <li>ReactJs</li>
+<li>Firebase</li>
 <li>ContextApi</li>
 <li>TypeScript</li>
-<li>Firebase</li>
 
